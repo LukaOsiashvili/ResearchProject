@@ -67,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
         checkAndRequestPermissions();
         initializeBluetooth();
 
-//        String data = "HR:90";
-//        processReceivedData(data);
+        String data = "HR:90";
+        processReceivedData(data);
 
         swipeRefreshLayout.setOnRefreshListener(() -> {
-//            processReceivedData(data);
-            initializeBluetooth();
+            processReceivedData(data);
+//            initializeBluetooth();
             swipeRefreshLayout.setRefreshing(false);
         });
 
